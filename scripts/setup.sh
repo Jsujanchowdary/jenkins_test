@@ -3,13 +3,12 @@ set -e
 
 setup() {
   echo "=== Running system setup ==="
-  sudo apt update -y
-  sudo apt-get update -y
-  sudo apt-get install -y maven nodejs npm
+  apt update -y
+  apt-get update -y
+  apt-get install -y maven nodejs npm
   echo "=== Setup completed successfully ==="
 }
 
-# Dispatcher
 case "$1" in
   setup) setup ;;
   *)
